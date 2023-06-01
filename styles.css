@@ -9,6 +9,14 @@ body {
   padding: 0;
   background-color: #e1cfa9;
 }
+/* styles.css */
+
+.text-center {
+  text-align: center;
+}
+
+/* Rest of the CSS styles */
+
 
 /* Rest of the CSS styles remain the same */
 
