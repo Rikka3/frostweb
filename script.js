@@ -13,4 +13,4 @@ function autoPlay() {
   showSlide(currentSlide + 1);
 }
 
-setInterval(autoPlay, 2000); // Change slide every 2 seconds
+setInterval(autoPlay, 5000); // Change slide every 2 seconds
