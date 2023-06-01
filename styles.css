@@ -66,4 +66,26 @@ footer {
 .cta-button:hover {
   background-color: #555;
 }
+/* styles.css */
+
+/* Rest of the CSS styles */
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 
