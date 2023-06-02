@@ -13,7 +13,7 @@
 
     body {
       font-family: 'Minecraft', Arial, sans-serif;
-      background-color: #0b0c18;
+      background-color: #eaf4fb; /* Updated background color to light blue */
       color: #fff;
       margin: 0;
       padding: 0;
@@ -36,6 +36,11 @@
       border-radius: 5px;
       font-size: 16px;
       text-decoration: none;
+      transition: background-color 0.3s ease; /* Added transition effect */
+    }
+
+    .header-button:hover {
+      background-color: #1f8ae0; /* Updated hover background color */
     }
 
     .container {
@@ -109,9 +114,8 @@
     }
 
     .external-button {
-      background-color: #33a1f0;
+      background-color: #1f8ae0;
       color: #fff;
-      font-size: 16px;
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
@@ -119,7 +123,7 @@
     }
 
     .external-button:hover {
-      background-color: #1f8ae0;
+      background-color: #33a1f0;
     }
 
     .footer {
@@ -143,6 +147,7 @@
     <button class="header-button">FAQ</button>
     <button class="header-button">Discord</button>
     <button class="header-button">Source</button>
+    <button class="header-button">About Me</button>
   </div>
 
   <div class="container">
@@ -166,15 +171,14 @@
 
     <div class="note">
       <p>Note: Frost Client is based on the source code of CloudClient.</p>
-    </div>
-
-    <div class="button-wrapper">
-      <a class="external-button" href="https://cloudmc.dev" target="_blank">Visit Cloud Client</a>
+      <div class="button-wrapper">
+        <a class="external-button" href="https://cloudmc.dev">Visit CloudMC.dev</a>
+      </div>
     </div>
   </div>
 
   <footer class="footer">
-    <p>&copy; 2023 Frost Client. All rights reserved. | https://rikka3.github.io/frostweb/</p>
+    <p>&copy; 2023 Frost Client. All rights reserved. | Website by Your Name</p>
   </footer>
 </body>
 
