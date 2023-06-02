@@ -5,213 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frost Client</title>
-  <style>
-    @font-face {
-      font-family: 'Minecraft';
-      src: url('Minecraft.ttf');
-    }
-    h1 {
-  color: #1b2134; /* Updated color to dark blue */
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-   .container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
-  color: #1b2134; /* Updated color to dark blue */
-}
-
-    body {
-      font-family: 'Minecraft', Arial, sans-serif;
-      background-color: #eaf4fb; /* Updated background color to light blue */
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    .header {
-      background-color: #111;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .header-button {
-      background-color: #1b2134;
-      color: #fff;
-      padding: 10px 20px;
-      margin-right: 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: background-color 0.3s ease; /* Added transition effect */
-    }
-
-    .header-button:hover {
-      background-color: #1f8ae0; /* Updated hover background color */
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 40px;
-      text-align: center;
-    }
-
-   h1 {
-  color: #1b2134 !important; /* Updated color to dark blue */
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-    .download-button {
-      background-color: #33a1f0;
-      color: #fff;
-      font-size: 20px;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-button:hover {
-      background-color: #1f8ae0;
-    }
-
-    .features {
-      margin-top: 40px;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .feature-box {
-      background-color: #111;
-      color: #fff;
-      width: 300px;
-      height: 200px;
-      padding: 20px;
-      margin-right: 20px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      animation: slide 20s infinite linear;
-      border-radius: 10px;
-      transition: transform 0.3s ease; /* Added transition effect */
-    }
-
-    .feature-box:hover {
-      transform: scale(1.1); /* Updated hover effect */
-    }
-
-    @keyframes slide {
-      0% {
-        transform: translateX(100%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .note {
-      margin-top: 40px;
-      font-size: 18px;
-    }
-
-    .note span {
-      color: #33a1f0;
-    }
-
-    .button-wrapper {
-      margin-top: 20px;
-    }
-
-    .external-button {
-      background-color: #1f8ae0;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .external-button:hover {
-      background-color: #1b70c4;
-    }
-
-    .footer {
-      margin-top: 40px;
-      background-color: #000;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .footer p {
-      font-size: 14px;
-      color: #ccc;
-      margin: 0;
-    }
-  </style>
-  <script>
-    function handleButtonClick(button) {
-      // Perform actions based on the button clicked
-      if (button.id === 'installation') {
-        // Handle Installation button click
-        console.log('Installation button clicked');
-      } else if (button.id === 'faq') {
-        // Handle FAQ button click
-        console.log('FAQ button clicked');
-      } else if (button.id === 'discord') {
-        // Handle Discord button click
-        console.log('Discord button clicked');
-      } else if (button.id === 'source') {
-        // Handle Source button click
-        console.log('Source button clicked');
-      } else if (button.id === 'about') {
-        // Handle About Me button click
-        console.log('About Me button clicked');
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
 <body>
   <div class="header">
-    <button class="header-button" id="installation" onclick="handleButtonClick(this)">Installation</button>
-    <button class="header-button" id="faq" onclick="handleButtonClick(this)">FAQ</button>
-    <button class="header-button" id="discord" onclick="handleButtonClick(this)">Discord</button>
-    <button class="header-button" id="source" onclick="handleButtonClick(this)">Source</button>
-    <button class="header-button" id="about" onclick="handleButtonClick(this)">About Me</button>
+    <button class="header-button">Installation</button>
+    <button class="header-button">FAQ</button>
+    <button class="header-button">Discord</button>
+    <button class="header-button">Source</button>
+    <button class="header-button">About Me</button>
   </div>
 
   <div class="container">
     <h1>Frost Client</h1>
-    <p>A powerful Minecraft mod with advanced features to enhance your gameplay.</p>
+    <p class="title-description">A powerful Minecraft mod with advanced features to enhance your gameplay.</p>
     <a class="download-button" href="#">Download Frost Client</a>
 
     <div class="features">
       <div class="feature-box">
-        <p>Boosts FPS</p>
+        <p class="feature-title">Boosts FPS</p>
+        <p class="feature-description">Experience improved FPS performance with Frost Client.</p>
       </div>
       <div class="feature-box">
-        <p>Free Cape</p>
+        <p class="feature-title">Free Cape</p>
+        <p class="feature-description">Unlock a stylish cape to personalize your Minecraft character.</p>
       </div>
       <div class="feature-box">
-        <p>Custom Launcher</p>
+        <p class="feature-title">Custom Launcher</p>
+        <p class="feature-description">Launch Minecraft with a custom client for enhanced features and flexibility.</p>
       </div>
       <div class="feature-box">
-        <p>Cracked Support</p>
+        <p class="feature-title">Cracked Support</p>
+        <p class="feature-description">Enjoy Frost Client even if you're using a cracked version of Minecraft.</p>
       </div>
     </div>
 
     <div class="note">
       <p>Note: Frost Client is based on the source code of CloudClient.</p>
-      <div class="button-wrapper">
-        <a class="external-button" href="https://cloudmc.dev">Visit CloudMC.dev</a>
-      </div>
+      <a class="cloudmc-link" href="https://cloudmc.dev" target="_blank">Visit cloudmc.dev</a>
     </div>
   </div>
 
