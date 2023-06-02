@@ -14,7 +14,7 @@
       margin: 0;
       padding: 0;
     }
-    .video-background {
+     .video-background {
       position: fixed;
       top: 0;
       left: 0;
@@ -23,9 +23,12 @@
       z-index: -1;
       overflow: hidden;
     }
-    .video-background video {
-      min-width: 100%;
-      min-height: 100%;
+    #bg-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
 
@@ -165,29 +168,31 @@
     <button class="header-button">Discord</button>
     <button class="header-button">Source Code</button>
     <button class="header-button">About Me</button>
-  </div>
-  <div class="video-background">
-    <div id="player"></div>
-  </div>
-    <script src="https://www.youtube.com/iframe_api"></script>
+   
+    
+    <div id="player" class="video-background"></div>
+
+  <!-- Load the YouTube Player API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script>
-    // Replace 'YOUR_VIDEO_ID' with the actual YouTube video ID
-    const videoId = 'n0vvGQL6PpI';
     let player;
 
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
-        videoId: videoId,
+        width: '100%',
+        height: '100%',
+        videoId: 'YOUR_VIDEO_ID', // Replace with your YouTube video ID
         playerVars: {
           autoplay: 1,
           controls: 0,
           modestbranding: 1,
           loop: 1,
-          playlist: videoId,
+          playlist: 'YOUR_VIDEO_ID', // Replace with your YouTube video ID
           fs: 0,
           cc_load_policy: 0,
           iv_load_policy: 3,
-          autohide: 0
+          autohide: 0,
+          showinfo: 0
         },
         events: {
           onReady: onPlayerReady,
@@ -197,6 +202,7 @@
     }
 
     function onPlayerReady(event) {
+      event.target.mute();
       event.target.playVideo();
     }
 
