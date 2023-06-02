@@ -88,6 +88,11 @@
       justify-content: center;
       animation: slide 20s infinite linear;
       border-radius: 10px;
+      transition: transform 0.3s ease; /* Added transition effect */
+    }
+
+    .feature-box:hover {
+      transform: scale(1.1); /* Updated hover effect */
     }
 
     @keyframes slide {
@@ -123,7 +128,7 @@
     }
 
     .external-button:hover {
-      background-color: #33a1f0;
+      background-color: #1b70c4;
     }
 
     .footer {
@@ -139,15 +144,36 @@
       margin: 0;
     }
   </style>
+  <script>
+    function handleButtonClick(button) {
+      // Perform actions based on the button clicked
+      if (button.id === 'installation') {
+        // Handle Installation button click
+        console.log('Installation button clicked');
+      } else if (button.id === 'faq') {
+        // Handle FAQ button click
+        console.log('FAQ button clicked');
+      } else if (button.id === 'discord') {
+        // Handle Discord button click
+        console.log('Discord button clicked');
+      } else if (button.id === 'source') {
+        // Handle Source button click
+        console.log('Source button clicked');
+      } else if (button.id === 'about') {
+        // Handle About Me button click
+        console.log('About Me button clicked');
+      }
+    }
+  </script>
 </head>
 
 <body>
   <div class="header">
-    <button class="header-button">Installation</button>
-    <button class="header-button">FAQ</button>
-    <button class="header-button">Discord</button>
-    <button class="header-button">Source</button>
-    <button class="header-button">About Me</button>
+    <button class="header-button" id="installation" onclick="handleButtonClick(this)">Installation</button>
+    <button class="header-button" id="faq" onclick="handleButtonClick(this)">FAQ</button>
+    <button class="header-button" id="discord" onclick="handleButtonClick(this)">Discord</button>
+    <button class="header-button" id="source" onclick="handleButtonClick(this)">Source</button>
+    <button class="header-button" id="about" onclick="handleButtonClick(this)">About Me</button>
   </div>
 
   <div class="container">
