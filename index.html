@@ -47,6 +47,51 @@
       background-color: #1b6ca8;
     }
 
+    .features {
+      margin-top: 40px;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .feature-box {
+      background-color: #111;
+      color: #fff;
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: slide 10s infinite;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(-100%);
+      }
+
+      40% {
+        transform: translateX(-200%);
+      }
+
+      60% {
+        transform: translateX(-300%);
+      }
+
+      80% {
+        transform: translateX(-200%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
     .footer {
       margin-top: 40px;
       text-align: center;
@@ -64,6 +109,21 @@
     <h1>Frost Client - Boost FPS, Free Cape, Custom Launcher</h1>
     <p>Frost Client is a powerful Minecraft mod that enhances performance, provides a free cape, and offers a custom launcher with cracked support. Download now and take your Minecraft experience to the next level!</p>
     <a class="download-button" href="https://example.com/frost-client.zip">Download Frost Client</a>
+
+    <div class="features">
+      <div class="feature-box">
+        <p>Boosts FPS</p>
+      </div>
+      <div class="feature-box">
+        <p>Free Cape</p>
+      </div>
+      <div class="feature-box">
+        <p>Custom Launcher</p>
+      </div>
+      <div class="feature-box">
+        <p>Cracked Support</p>
+      </div>
+    </div>
   </div>
 
   <footer class="footer">
