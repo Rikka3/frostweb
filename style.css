@@ -1,3 +1,49 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('Minecraft.ttf');
+}
+
+body {
+  font-family: 'Minecraft', Arial, sans-serif;
+  background-color: #eaf4fb; /* Updated background color to light blue */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-button {
+  background-color: #1b2134;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.header-button:hover {
+  background-color: #1f8ae0; /* Updated hover background color */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Rest of the code remains the same */
+
 .features {
   margin-top: 40px;
   overflow: hidden;
