@@ -107,6 +107,7 @@ h1 {
   left: 0;
   right: 0;
   padding: 0 10px;
+  color: orange;
 }
 
 @keyframes slide {
