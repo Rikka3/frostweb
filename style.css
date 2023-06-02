@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Minecraft';
-  src: url('Minecraft.ttf');
-}
-
-body {
-  font-family: 'Minecraft', Arial, sans-serif;
-  background-color: #eaf4fb; /* Updated background color to light blue */
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
 
 .header {
   background-color: #111;
