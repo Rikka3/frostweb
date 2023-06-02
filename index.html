@@ -5,14 +5,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frost Client</title>
-  <link rel="stylesheet" href="frost-client.css">
-</head>
+  <style>
     body {
-      background-color: #33a1f0;
+      background-color: #0b0c18;
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    .header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-button {
+      background-color: #1b2134;
+      color: #fff;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
     }
 
     .container {
@@ -28,25 +46,18 @@
       margin-bottom: 20px;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-
     .download-button {
-      display: inline-block;
-      background-color: #fff;
-      color: #33a1f0;
+      background-color: #33a1f0;
+      color: #fff;
       font-size: 20px;
       padding: 10px 20px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 10px;
       transition: background-color 0.3s ease;
     }
 
     .download-button:hover {
-      background-color: #e0e0e0;
+      background-color: #1f8ae0;
     }
 
     .features {
@@ -79,6 +90,15 @@
       }
     }
 
+    .note {
+      margin-top: 40px;
+      font-size: 18px;
+    }
+
+    .note span {
+      color: #33a1f0;
+    }
+
     .footer {
       margin-top: 40px;
       background-color: #000;
@@ -95,10 +115,15 @@
 </head>
 
 <body>
+  <div class="header">
+    <button class="header-button">Installation</button>
+    <button class="header-button">FAQ</button>
+    <button class="header-button">Discord</button>
+  </div>
+
   <div class="container">
     <h1>Frost Client</h1>
-    <p>Frost Client is a powerful Minecraft mod that enhances performance, provides a free cape, and offers a custom launcher with cracked support. Download now and take your Minecraft experience to the next level!</p>
-    <a class="download-button" href="https://example.com/frost-client.zip">Download Frost Client</a>
+    <a class="download-button" href="#">Download Frost Client</a>
 
     <div class="features">
       <div class="feature-box">
@@ -113,7 +138,10 @@
       <div class="feature-box">
         <p>Cracked Support</p>
       </div>
-      <!-- Add more feature boxes here if needed -->
+    </div>
+
+    <div class="note">
+      <p>Note: Frost Client is based on the source code of CloudClient.</p>
     </div>
   </div>
 
